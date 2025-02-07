@@ -37,14 +37,27 @@ yarn-error.log*
 .vercel
 
 # Ignore specific files
-tsconfig.json
-.next/
-*.log
-# Add any other files or directories you want to ignore
+# (Remove or comment out the following lines)
+# .next/
+# *.log
 
 # Ensure your project files are included
-!your_project_directory/
+!package.json
+!package-lock.json
+!tsconfig.json
+!next-env.d.ts
+!lib/
+!app/
+!components/
+!hooks/
+!public/
+!styles/
+!types/
+!next.config.mjs
+!postcss.config.mjs
+!tailwind.config.js
+!tailwind.config.ts
 
-node_modules/
-.vscode/
-.npm/
+# Include specific styles if necessary
+!app/globals.css
+!styles/globals.css 
